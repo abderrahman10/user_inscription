@@ -4,5 +4,7 @@ import com.insription.user.core.UserInscription;
 
 public interface InscriptionService {
 
-    UserInscription createInscription(UserInscription userInscription);
+    boolean inscrireUtilisateur(UserInscription userInscription);
+
+    UserInscription findUserInscriptionById(int i);
 }

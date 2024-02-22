@@ -1,21 +1,23 @@
 package com.insription.user.core;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 
+import java.time.LocalDateTime;
+
 @Data
-@Builder
-@AllArgsConstructor
 public class UserInscription {
-    Long id;
-    String firstName;
-    String  lastName;
-    String  email;
-    Long phone;
-    String  token;
-    String  civility;
-    String status;
-    String dcrName;
-    String dcrDepartement;
+    private String nom;
+    private String prenom;
+    private String email;
+    private String numeroTelephone;
+    private LocalDateTime dateInscription;
+
+    public UserInscription(String nom, String prenom, String numeroTelephone, String gmail, LocalDateTime dateInscription) {
+        this.nom = nom;
+        this.prenom = prenom;
+        this.numeroTelephone = numeroTelephone;
+        this.email = gmail;
+        this.dateInscription = dateInscription;
+    }
+
 }
