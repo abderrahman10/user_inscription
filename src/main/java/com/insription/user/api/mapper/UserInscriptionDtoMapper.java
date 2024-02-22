@@ -5,7 +5,7 @@ import com.insription.user.core.UserInscription;
 import org.mapstruct.Mapper;
 import org.springframework.stereotype.Component;
 
-@Mapper(componentModel = "spring")
+
 
 public interface UserInscriptionDtoMapper {
 
